@@ -2,6 +2,7 @@
 import { Movie } from "@/types/movie";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 interface MovieCardProps {
   movie: Movie;
@@ -10,6 +11,8 @@ interface MovieCardProps {
 }
 
 const MovieCard = ({ movie, className, onClick }: MovieCardProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  
   const handleClick = () => {
     if (onClick) onClick(movie);
   };
@@ -22,9 +25,20 @@ const MovieCard = ({ movie, className, onClick }: MovieCardProps) => {
       <img 
         src={movie.poster_path} 
         alt={movie.title}
-        className="w-full h-full object-cover"
+        className={cn(
+          "w-full h-full object-cover transition-opacity duration-300",
+          imageLoaded ? "opacity-100" : "opacity-0"
+        )}
         loading="lazy"
+        onLoad={() => setImageLoaded(true)}
+        width={200}
+        height={300}
       />
+      {!imageLoaded && (
+        <div className="absolute inset-0 bg-muted flex items-center justify-center">
+          <div className="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
       <div className="movie-card-overlay">
         <div className="flex items-center gap-2 mb-1">
           <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />

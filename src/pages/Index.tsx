@@ -79,8 +79,8 @@ const Index = () => {
                 <h2 className="text-2xl font-bold">
                   Top Recommendations
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {movies.map(movie => (
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {movies.slice(0, 10).map(movie => (
                     <MovieCard 
                       key={movie.id} 
                       movie={movie} 

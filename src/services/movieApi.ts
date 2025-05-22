@@ -265,6 +265,237 @@ const mockMovies: Movie[] = [
     vote_average: 8.0,
     genres: ["Comedy", "Drama"],
     runtime: 133
+  },
+  {
+    id: 25,
+    title: "3 Idiots",
+    overview: "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them 'idiots'.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+    release_date: "2009-12-25",
+    vote_average: 8.4,
+    genres: ["Comedy", "Drama"],
+    runtime: 170
+  },
+  {
+    id: 26,
+    title: "Lagaan",
+    overview: "The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNDYxNWUzZmYtOGQxMC00MTdkLTkxOTctYzkyOGIwNWQxZjhmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BNDYxNWUzZmYtOGQxMC00MTdkLTkxOTctYzkyOGIwNWQxZjhmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+    release_date: "2001-06-15",
+    vote_average: 8.1,
+    genres: ["Drama", "Sport"],
+    runtime: 224
+  },
+  {
+    id: 27,
+    title: "Dangal",
+    overview: "Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita to become India's first world-class female wrestlers.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_.jpg",
+    release_date: "2016-12-23",
+    vote_average: 8.4,
+    genres: ["Biography", "Drama", "Sport"],
+    runtime: 161
+  },
+  {
+    id: 28,
+    title: "PK",
+    overview: "An alien on Earth loses the only device he can use to communicate with his spaceship. His innocent nature and child-like questions force the country to evaluate the impact of religion on its people.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_.jpg",
+    release_date: "2014-12-19",
+    vote_average: 8.1,
+    genres: ["Comedy", "Drama", "Sci-Fi"],
+    runtime: 153
+  },
+  {
+    id: 29,
+    title: "Bahubali: The Beginning",
+    overview: "In ancient India, an adventurous and daring man becomes involved in a decades-old feud between two warring peoples.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+    release_date: "2015-07-10",
+    vote_average: 8.0,
+    genres: ["Action", "Drama", "Fantasy"],
+    runtime: 159
+  },
+  {
+    id: 30,
+    title: "Bahubali 2: The Conclusion",
+    overview: "When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BOGNlNmRkMjctNDgxMC00NzFhLWIzY2YtZDk3ZDE0NWZhZDBlXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BOGNlNmRkMjctNDgxMC00NzFhLWIzY2YtZDk3ZDE0NWZhZDBlXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg",
+    release_date: "2017-04-28",
+    vote_average: 8.2,
+    genres: ["Action", "Drama", "Fantasy"],
+    runtime: 167
+  },
+  {
+    id: 31,
+    title: "Andhadhun",
+    overview: "A series of mysterious events change the life of a blind pianist, who must now report a crime that he should technically know nothing of.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZWZhMjhhZmYtOTIzOC00MGYzLWI1OGYtM2ZkN2IxNTI4ZWI3XkEyXkFqcGdeQXVyNDAzNDk0MTQ@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZWZhMjhhZmYtOTIzOC00MGYzLWI1OGYtM2ZkN2IxNTI4ZWI3XkEyXkFqcGdeQXVyNDAzNDk0MTQ@._V1_.jpg",
+    release_date: "2018-10-05",
+    vote_average: 8.2,
+    genres: ["Crime", "Thriller"],
+    runtime: 139
+  },
+  {
+    id: 32,
+    title: "Gully Boy",
+    overview: "A coming-of-age story based on the lives of street rappers in Mumbai.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZDkzMjE3MjUtNjBlOC00YzFhLWFkYTktYTM2MmJkOTU0ZTMyXkEyXkFqcGdeQXVyNjE1OTgzMzg@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZDkzMjE3MjUtNjBlOC00YzFhLWFkYTktYTM2MmJkOTU0ZTMyXkEyXkFqcGdeQXVyNjE1OTgzMzg@._V1_.jpg",
+    release_date: "2019-02-14",
+    vote_average: 7.9,
+    genres: ["Drama", "Music"],
+    runtime: 153
+  },
+  {
+    id: 33,
+    title: "Dil Chahta Hai",
+    overview: "Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZWI5ZWM4NzgtMzc1Yi00NGRlLWFhMDEtNmM1MTI1NjViY2E3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZWI5ZWM4NzgtMzc1Yi00NGRlLWFhMDEtNmM1MTI1NjViY2E3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+    release_date: "2001-08-10",
+    vote_average: 8.1,
+    genres: ["Comedy", "Drama", "Romance"],
+    runtime: 183
+  },
+  {
+    id: 34,
+    title: "Gangubai Kathiawadi",
+    overview: "A woman forced into prostitution becomes a powerful figure in the criminal underworld.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BN2M4YTA4ZTEtN2EyNy00YTlmLWE4YzYtYjYyYjRkMTM1NWJjXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BN2M4YTA4ZTEtN2EyNy00YTlmLWE4YzYtYjYyYjRkMTM1NWJjXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    release_date: "2022-02-25",
+    vote_average: 7.8,
+    genres: ["Crime", "Drama"],
+    runtime: 154
+  },
+  {
+    id: 35,
+    title: "Zindagi Na Milegi Dobara",
+    overview: "Three friends decide to turn their fantasy vacation into reality after one of their friends gets engaged.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+    release_date: "2011-07-15",
+    vote_average: 8.2,
+    genres: ["Comedy", "Drama", "Adventure"],
+    runtime: 155
+  },
+  {
+    id: 36,
+    title: "Queen",
+    overview: "A Delhi girl from a traditional family sets out on a solo honeymoon after her marriage gets canceled.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMzE4MDQzODk3MF5BMl5BanBnXkFtZTgwOTY0MTgwMzE@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMzE4MDQzODk3MF5BMl5BanBnXkFtZTgwOTY0MTgwMzE@._V1_.jpg",
+    release_date: "2014-03-07",
+    vote_average: 8.1,
+    genres: ["Adventure", "Comedy", "Drama"],
+    runtime: 146
+  },
+  {
+    id: 37,
+    title: "Pathan",
+    overview: "An Indian spy takes on the leader of a group of mercenaries who have nefarious plans to target his homeland.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    release_date: "2023-01-25",
+    vote_average: 6.8,
+    genres: ["Action", "Thriller"],
+    runtime: 146
+  },
+  {
+    id: 38,
+    title: "Jawan",
+    overview: "A man is driven by a personal vendetta to rectify the wrongs in society, while keeping a promise made years ago. He comes up against a monstrous outlaw with no fear, who has caused extreme suffering to many.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BOWI5NmU3NTUtOTZiMS00YzA1LThlYTktNDJjYTU5NDFiMDUxXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BOWI5NmU3NTUtOTZiMS00YzA1LThlYTktNDJjYTU5NDFiMDUxXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+    release_date: "2023-09-07",
+    vote_average: 7.0,
+    genres: ["Action", "Thriller"],
+    runtime: 169
+  },
+  {
+    id: 39,
+    title: "Animal",
+    overview: "A son undergoes a remarkable transformation as the bond with his father begins to fracture, and he becomes consumed by a quest for vengeance.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMGNhZDczYzUtYjE5NS00YjJiLTg5NDUtZTVlNzBiYjRjNjU5XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMGNhZDczYzUtYjE5NS00YjJiLTg5NDUtZTVlNzBiYjRjNjU5XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+    release_date: "2023-12-01",
+    vote_average: 6.1,
+    genres: ["Action", "Crime", "Drama"],
+    runtime: 201
+  },
+  {
+    id: 40,
+    title: "The Kashmir Files",
+    overview: "A heart-wrenching narrative of the pain, suffering, and struggle endured by Kashmiri Pandits.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMjMwMDgyOGQtMWZjNC00MDUwLTllZDYtZWM3NDBmN2YzNGZmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMjMwMDgyOGQtMWZjNC00MDUwLTllZDYtZWM3NDBmN2YzNGZmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg",
+    release_date: "2022-03-11",
+    vote_average: 8.3,
+    genres: ["Drama", "History"],
+    runtime: 170
+  },
+  {
+    id: 41,
+    title: "RRR",
+    overview: "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BOGQ3ZjMwZDctZTFkMi00ZjU4LWI1NjctOGZmM2QwZWZhYzc4XkEyXkFqcGdeQXVyMTMzODk3NDU0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BOGQ3ZjMwZDctZTFkMi00ZjU4LWI1NjctOGZmM2QwZWZhYzc4XkEyXkFqcGdeQXVyMTMzODk3NDU0._V1_.jpg",
+    release_date: "2022-03-24",
+    vote_average: 7.9,
+    genres: ["Action", "Drama"],
+    runtime: 187
+  },
+  {
+    id: 42,
+    title: "Tumbbad",
+    overview: "A mythological story about a goddess who created the entire universe. The plot revolves around the consequences when humans build a temple for her first-born.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BYmQxNmU4ZjgtYzE5Mi00ZDlhLTlhOTctMzJkNjk2ZGUyZGEwXkEyXkFqcGdeQXVyMzgxMDA0Nzk@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BYmQxNmU4ZjgtYzE5Mi00ZDlhLTlhOTctMzJkNjk2ZGUyZGEwXkEyXkFqcGdeQXVyMzgxMDA0Nzk@._V1_.jpg",
+    release_date: "2018-10-12",
+    vote_average: 8.3,
+    genres: ["Horror", "Fantasy", "Drama"],
+    runtime: 104
+  },
+  {
+    id: 43,
+    title: "Kantara",
+    overview: "It involves the traditional culture of Kambala and Bhootha Kola. A human and nature conflict where Shiva is the rebellion who works against nature. A death leads to war between villagers and evil forces.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMDNlM2U0M2MtNDYyMC00YjFiLWI2ZDItMDRhM2M4NmUyYmMxXkEyXkFqcGdeQXVyMTUzOTcyODA5._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMDNlM2U0M2MtNDYyMC00YjFiLWI2ZDItMDRhM2M4NmUyYmMxXkEyXkFqcGdeQXVyMTUzOTcyODA5._V1_.jpg",
+    release_date: "2022-09-30",
+    vote_average: 8.4,
+    genres: ["Action", "Drama", "Thriller"],
+    runtime: 150
+  },
+  {
+    id: 44,
+    title: "Stree",
+    overview: "In the small town of Chanderi, the menfolk live in fear of an evil spirit named 'Stree' who abducts men in the night. Based on the urban legend of 'Nale Ba' that went viral in Karnataka in the 1990s.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMjk4NGZiMzAtODU1NS00MmQ4LWJiNmQtNWU5ZWU4Y2VmNWI3XkEyXkFqcGdeQXVyNzc4NTU3Njg@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMjk4NGZiMzAtODU1NS00MmQ4LWJiNmQtNWU5ZWU4Y2VmNWI3XkEyXkFqcGdeQXVyNzc4NTU3Njg@._V1_.jpg",
+    release_date: "2018-08-31",
+    vote_average: 7.6,
+    genres: ["Comedy", "Horror"],
+    runtime: 128
+  },
+  {
+    id: 45,
+    title: "Bajrangi Bhaijaan",
+    overview: "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMjE1NjQ5ODc2NV5BMl5BanBnXkFtZTgwOTM5ODIxNjE@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMjE1NjQ5ODc2NV5BMl5BanBnXkFtZTgwOTM5ODIxNjE@._V1_.jpg",
+    release_date: "2015-07-17",
+    vote_average: 8.1,
+    genres: ["Adventure", "Comedy", "Drama"],
+    runtime: 163
   }
 ];
 
@@ -327,6 +558,9 @@ export const getRecommendations = (
       
       // Sort by rating in descending order
       filtered.sort((a, b) => b.vote_average - a.vote_average);
+      
+      // Limit to 10 movies for better performance
+      filtered = filtered.slice(0, 10);
       
       resolve(filtered);
     }, 1000);
