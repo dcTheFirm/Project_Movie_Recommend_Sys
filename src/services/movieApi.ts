@@ -1,4 +1,3 @@
-
 import { Movie, MovieGenre } from '@/types/movie';
 
 // Mock data - In a real app, this would be fetched from a real API
@@ -134,6 +133,138 @@ const mockMovies: Movie[] = [
     vote_average: 8.7,
     genres: ["Biography", "Crime", "Drama"],
     runtime: 146
+  },
+  {
+    id: 13,
+    title: "Everything Everywhere All at Once",
+    overview: "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_.jpg",
+    release_date: "2022-03-25",
+    vote_average: 8.8,
+    genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
+    runtime: 139
+  },
+  {
+    id: 14,
+    title: "Dune",
+    overview: "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    release_date: "2021-10-22",
+    vote_average: 8.0,
+    genres: ["Action", "Adventure", "Drama", "Sci-Fi"],
+    runtime: 155
+  },
+  {
+    id: 15,
+    title: "Oppenheimer",
+    overview: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg",
+    release_date: "2023-07-21",
+    vote_average: 8.4,
+    genres: ["Biography", "Drama", "History"],
+    runtime: 180
+  },
+  {
+    id: 16,
+    title: "Top Gun: Maverick",
+    overview: "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+    release_date: "2022-05-27",
+    vote_average: 8.3,
+    genres: ["Action", "Drama"],
+    runtime: 130
+  },
+  {
+    id: 17,
+    title: "Spider-Man: Across the Spider-Verse",
+    overview: "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_.jpg",
+    release_date: "2023-06-02",
+    vote_average: 8.6,
+    genres: ["Animation", "Action", "Adventure"],
+    runtime: 140
+  },
+  {
+    id: 18,
+    title: "The Batman",
+    overview: "When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg",
+    release_date: "2022-03-04",
+    vote_average: 7.8,
+    genres: ["Action", "Crime", "Drama"],
+    runtime: 176
+  },
+  {
+    id: 19,
+    title: "Barbie",
+    overview: "Barbie suffers a crisis that leads her to question her world and her existence.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+    release_date: "2023-07-21",
+    vote_average: 7.3,
+    genres: ["Adventure", "Comedy", "Fantasy"],
+    runtime: 114
+  },
+  {
+    id: 20,
+    title: "Coco",
+    overview: "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_.jpg",
+    release_date: "2017-11-22",
+    vote_average: 8.4,
+    genres: ["Animation", "Adventure", "Family"],
+    runtime: 105
+  },
+  {
+    id: 21,
+    title: "Joker",
+    overview: "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+    release_date: "2019-10-04",
+    vote_average: 8.4,
+    genres: ["Crime", "Drama", "Thriller"],
+    runtime: 122
+  },
+  {
+    id: 22,
+    title: "The Banshees of Inisherin",
+    overview: "Two lifelong friends find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BM2NlZDI0ZDktNTg5OS00ZjQ1LWI4MDEtN2I0MDE5NWRkNzgyXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BM2NlZDI0ZDktNTg5OS00ZjQ1LWI4MDEtN2I0MDE5NWRkNzgyXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_.jpg", 
+    release_date: "2022-10-21",
+    vote_average: 7.7,
+    genres: ["Comedy", "Drama"],
+    runtime: 114
+  },
+  {
+    id: 23,
+    title: "Dune: Part Two",
+    overview: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BODI0YjNhNjUtYjM0My00MTUwLWFlYTMtMWI2NGUzYjNjNmYzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BODI0YjNhNjUtYjM0My00MTUwLWFlYTMtMWI2NGUzYjNjNmYzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+    release_date: "2024-03-01",
+    vote_average: 8.7,
+    genres: ["Action", "Adventure", "Drama", "Sci-Fi"],
+    runtime: 166
+  },
+  {
+    id: 24,
+    title: "The Holdovers",
+    overview: "A cranky history teacher at a remote prep school is forced to remain on campus over the holidays with a troubled student who has no place to go.",
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNDc2MzNkMjMtZDY5NC00NmQ0LWI1NjctZjRhNWIzZjc4MGRiXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+    backdrop_path: "https://m.media-amazon.com/images/M/MV5BNDc2MzNkMjMtZDY5NC00NmQ0LWI1NjctZjRhNWIzZjc4MGRiXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+    release_date: "2023-10-27",
+    vote_average: 8.0,
+    genres: ["Comedy", "Drama"],
+    runtime: 133
   }
 ];
 
