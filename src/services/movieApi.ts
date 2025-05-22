@@ -1,3 +1,4 @@
+
 import { Movie, MovieGenre } from '@/types/movie';
 
 // Mock data - In a real app, this would be fetched from a real API
@@ -548,16 +549,52 @@ export const getRecommendations = (
         filtered = filtered.filter(movie => movie.vote_average >= preferences.minRating!);
       }
       
-      // Filter by year range if specified
-      if (preferences.yearRange) {
+      // Fix: Filter by year range if specified
+      if (preferences.yearRange && preferences.yearRange.length === 2) {
         filtered = filtered.filter(movie => {
-          const year = new Date(movie.release_date).getFullYear();
-          return year >= preferences.yearRange![0] && year <= preferences.yearRange![1];
+          const releaseYear = parseInt(movie.release_date.split('-')[0], 10);
+          return releaseYear >= preferences.yearRange![0] && releaseYear <= preferences.yearRange![1];
         });
       }
       
       // Sort by rating in descending order
       filtered.sort((a, b) => b.vote_average - a.vote_average);
+      
+      // Ensure a good mix of Hollywood and Bollywood films
+      if (filtered.length > 0) {
+        // Identify Bollywood films (simplified approach)
+        const bollywoodMovies = filtered.filter(movie => 
+          [21, 22, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+          .includes(movie.id)
+        );
+        
+        const hollywoodMovies = filtered.filter(movie => 
+          ![21, 22, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+          .includes(movie.id)
+        );
+        
+        // Create a balanced mix
+        let mixedResults = [];
+        const maxMoviesPerCategory = Math.min(5, Math.ceil(10 / 2));
+        
+        // Add Bollywood movies (up to maxMoviesPerCategory)
+        mixedResults.push(...bollywoodMovies.slice(0, maxMoviesPerCategory));
+        
+        // Add Hollywood movies (up to remaining slots)
+        const remainingSlots = 10 - mixedResults.length;
+        mixedResults.push(...hollywoodMovies.slice(0, remainingSlots));
+        
+        // If we don't have enough movies total, use whatever we have
+        if (mixedResults.length < 10 && filtered.length > mixedResults.length) {
+          const remainingMovies = filtered.filter(movie => 
+            !mixedResults.some(m => m.id === movie.id)
+          );
+          mixedResults = [...mixedResults, ...remainingMovies.slice(0, 10 - mixedResults.length)];
+        }
+        
+        // If we still don't have any results, use the original filtered list
+        filtered = mixedResults.length > 0 ? mixedResults : filtered.slice(0, 10);
+      }
       
       // Limit to 10 movies for better performance
       filtered = filtered.slice(0, 10);
